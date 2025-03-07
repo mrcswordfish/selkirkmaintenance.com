@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contractor Portal | Selkirk Maintenance</title>
+  <link rel="icon" href="SM logo.svg" type="image/svg+xml">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font (Open Sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #5966b1;
+      --accent: #f6a230;
+      --secondary-accent: #fbcf41;
+      --bg-color: #ffffe4;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg-color);
+      color: #333;
+    }
+    /* Navbar */
+    .navbar-custom {
+      background-color: var(--bg-color);
+    }
+    .navbar-custom .navbar-brand, 
+    .navbar-custom .nav-link {
+      color: primary;
+      font-weight: 600;
+    }
+    .navbar-custom .nav-link:hover {
+      color: var(--accent);
+    }
+    /* Page Header */
+    .page-header {
+      background: url('portals.jpg') no-repeat center center/cover;
+      height: 300px;
+      position: relative;
+      color: #fff;
+    }
+    .page-header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+    }
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+    /* Contractor Portal Content */
+    section {
+      padding: 60px 0;
+    }
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    /* Login Form */
+    .portal-form input {
+      margin-bottom: 15px;
+    }
+    /* Footer */
+    footer {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img src="SM logo.svg" alt="Selkirk Maintenance Logo" style="height:50px;"> Selkirk Maintenance
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#booking">Book a Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal.html">Contractor Portal</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-content container">
+      <h1>Contractor Portal</h1>
+    </div>
+  </header>
+  
+  <!-- Contractor Login Section -->
+  <section id="contractor-login">
+    <div class="container">
+      <h2 class="mb-4">Login to Your Contractor Account</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="portal-form">
+            <div class="mb-3">
+              <label for="contractorEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="contractorEmail" placeholder="contractor@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="contractorPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="contractorPassword" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-accent w-100" style="background-color: var(--accent); border: none;">Login</button>
+          </form>
+          <p class="mt-3 text-center">Don't have an account? <a href="#">Register Here</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Selkirk Maintenance. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
+        <a href="terms.html" class="text-white">Terms of Service</a>
+      </p>
+      <p>
+        Follow us:
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">Twitter</a>
+      </p>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
