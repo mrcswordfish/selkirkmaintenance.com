@@ -72,6 +72,17 @@
       color: #fff;
       padding: 20px 0;
       text-align: center;
+	}
+	.social-links a {
+		margin: 0 8px; /* Space between icons */
+		display: inline-block;
+	}
+	.social-links img {
+		vertical-align: middle;
+	transition: opacity 0.3s;
+	}
+	.social-links img:hover {
+	  opacity: 0.8;
     }
   </style>
 </head>
@@ -125,9 +136,26 @@
       </p>
       <p>
         Follow us:
-        <a href="#" class="text-white me-2">Facebook</a>
-        <a href="#" class="text-white me-2">Instagram</a>
-        <a href="#" class="text-white">Twitter</a>
+        <div class="social-links">
+			<a href="[www.facebook.com]" aria-label="Facebook">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+				alt="Facebook logo" 
+				width="20"
+				height="20">
+        </a>
+		  <a href="[INSTAGRAM-PROFILE-URL]" aria-label="Instagram">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" 
+				 alt="Instagram logo"
+				 width="20"
+				 height="20">
+		  </a>
+		  <a href="[TWITTER-PROFILE-URL]" aria-label="Twitter">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" 
+				 alt="Twitter logo"
+				 width="20"
+				 height="20">
+		  </a>
+		</div>
       </p>
     </div>
   </footer>
