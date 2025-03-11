@@ -42,6 +42,9 @@
       height: 750px;
       position: relative;
       color: #fff;
+	  .card-body {
+      text-align: center;
+    }
     }
     .hero::before {
       content: "";
@@ -54,8 +57,8 @@
       position: relative;
       z-index: 1;
       text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
+      width: 100%;
+      padding: 0 15px; /* Add padding for better mobile spacing */;
     }
     .hero-content h1 {
       font-size: 3rem;
